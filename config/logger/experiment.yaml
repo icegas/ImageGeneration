@@ -1,0 +1,7 @@
+tracking_uri: http://127.0.0.1:5000
+experiment_name: skill_project
+
+run_name: diffusion_model_v2
+print_metrics: ['train_main_loss']
+save_each_epoch: 20
+log_dirs: ['config', 'models', 'trainers', 'losses', 'dataloader']

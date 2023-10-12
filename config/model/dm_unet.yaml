@@ -1,0 +1,26 @@
+name: DiffusionModel
+network: UNET
+calc_metrics_on_train: False
+calc_loss_on_eval: False
+eval: True
+
+epochs: 8010
+start_epoch: 0
+save_epoch_percent: 0.0
+device: cuda
+
+metrics: []
+
+params:
+  n_steps: 1000
+  min_beta: 1e-4
+  max_beta: 0.01
+  time_emb_dim: 256
+  in_c:   [3,  32,  64, 128]
+  out_c:  [32, 64, 128, 256]
+  decoder_out: 32
+
+loss: 
+  name: 'mse_loss'
+  params:
+    reduction: 'mean'

@@ -1,0 +1,6 @@
+defaults:
+  - loader: loader
+  - logger: experiment
+  - model:  dm_unet
+  - metrics: metrics
+  - optimizer: adam
